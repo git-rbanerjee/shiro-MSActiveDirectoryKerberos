@@ -1,9 +1,11 @@
 # MSActiveDirectoryKerberos for Shiro
 
-A Shiro realm for authentication using Microsoft Active Directory via kerberos protocol.
-Users can be authenticated via their domain username and password using DC. 
+**Continuous Integration:** [![Build Status](https://travis-ci.org/git-rbanerjee/shiro-MSActiveDirectoryKerberos.svg?branch=master)](https://travis-ci.org/git-rbanerjee/shiro-MSActiveDirectoryKerberos) <br/>
 
-//////////////////////////////////////////
+**A Shiro realm for authentication using Microsoft Active Directory via kerberos protocol.
+Users can be authenticated via their domain username and password using DC. **
+
+
 To use put the generated JAR in classpath
 
 Using it in your shiro.ini file:
@@ -21,11 +23,11 @@ TO Know KDC ping <domina> ; then find ip ; then ping -a <that ip> ;
 
 Details for the same is given here :
 
-http://spnego.sourceforge.net/pre_flight.html
+(http://spnego.sourceforge.net/pre_flight.html)
 
 
-//////////////////////////////////////////////////////
-Build instruction
+
+**Build instruction**
 
 mvn package 
 
