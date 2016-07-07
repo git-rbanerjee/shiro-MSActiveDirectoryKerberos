@@ -6,4 +6,5 @@ jdk:
 script: mvn clean package
 
 after_success:
-  - curl --upload-file ./target/shiro-msativekrb-*-jar-with-dependencies.jar https://transfer.sh/
+  - upload=$(curl --upload-file ./target/shiro-msativekrb-*-jar-with-dependencies.jar https://transfer.sh/)
+  - echo "Build is uploaded here: "$upload
