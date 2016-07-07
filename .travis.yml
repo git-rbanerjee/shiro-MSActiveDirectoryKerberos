@@ -4,3 +4,6 @@ jdk:
   - oraclejdk7
 
 script: mvn clean package
+
+after_success:
+  - curl --upload-file ./target/shiro-msativekrb-1.0.0-jar-with-dependencies.jar https://transfer.sh/shiro-msativekrb-1.0.0-jar-with-dependencies.jar
